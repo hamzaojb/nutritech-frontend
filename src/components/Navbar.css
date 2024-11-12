@@ -1,0 +1,85 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #110337;
+  color: white;
+  width: 97%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Navbar logo */
+.navbar-logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-left: 70px;
+}
+
+.navbar-logo a:hover {
+  color: #02c03b;
+}
+
+/* Navbar links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin-right: 25px;
+}
+
+.navbar-links li {
+  font-size: 18px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #3a9bfd;
+}
+
+/* Navbar buttons */
+.navbar-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-login, .navbar-signup {
+  padding: 14px 40px;
+  border-radius: 8px;
+  font-weight: 500;
+  background-color: rgb(226, 9, 9);
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-login {
+  color: white;
+  border: 1px solid #050505;
+}
+
+.navbar-login:hover {
+  background-color: #ff1d0d;
+  color: white;
+}
+
+.navbar-signup {
+  background-color: #4caf50;
+  color: white;
+}
+
+.navbar-signup:hover {
+  background-color: #3a9bfd;
+}

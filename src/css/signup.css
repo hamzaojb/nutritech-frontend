@@ -1,0 +1,108 @@
+/* Style global pour centrer le contenu */
+
+
+/* Conteneur principal pour le formulaire */
+form {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* Style pour chaque ligne de formulaire */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Style pour les labels */
+label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    align-self: flex-start;
+    text-align: left;
+}
+
+/* Style pour les champs de saisie */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #80A7B2;
+    background-color: #80A7B2;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #090c09;
+    box-shadow: 0 0 8px rgba(8, 8, 8, 0.3);
+}
+
+/* Style pour le bouton de soumission */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+/* Style pour les messages (erreur ou succès) */
+p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Style pour le titre */
+h2 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Style pour le lien "Sign up" */
+.signup-link {
+    font-size: 14px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+

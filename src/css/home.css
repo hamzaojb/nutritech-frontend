@@ -1,0 +1,188 @@
+/* home.css */
+
+/* Assurez-vous que le body et le conteneur de la page ont une largeur de 100% */
+body, .home-content {
+    width: 100%;
+    margin: 0;  /* Enlève la marge par défaut */
+    padding: 0; /* Supprime tout padding inutile */
+    font-family: 'Arial', sans-serif;
+    background-color: #110337;
+  }
+  
+  
+  
+  /* Conteneur principal du tableau */
+  .home-content {
+    padding: 20px;
+    width: 100%; /* Occupe toute la largeur */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alignement du contenu vers le haut */
+    min-height: 80vh; /* Hauteur minimum du contenu de la page (80% de la hauteur de la fenêtre) */
+  }
+  
+  /* Titre principal */
+  .home-content h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Tableau */
+  .user-table {
+    width: 150%; /* Table occupe 80% de la largeur de la page */
+    border-collapse: collapse; /* Suppression des doubles bordures */
+    margin-top: 20px;
+    border-radius: 10px; /* Coins arrondis */
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #007bff; /* Bleu principal */
+    color: white;
+    transform: scale(0.95); /* Effet d'échelle initial */
+    transition: transform 0.3s ease-in-out; /* Transition pour l'agrandissement */
+    max-height: 500px; /* Hauteur maximale du tableau, ajustable */
+    overflow-y: auto; /* Ajoute une barre de défilement verticale si le contenu dépasse la hauteur */
+  }
+  
+  .user-table:hover {
+    transform: scale(1); /* Agrandissement du tableau lors du survol */
+  }
+  
+  /* En-têtes du tableau */
+  .user-table th {
+    padding: 15px;
+    background-color: #2E71F8; /* Bleu foncé pour l'entête */
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  /* Lignes paires du tableau */
+  .user-table tr:nth-child(even) {
+    background-color: #2E71F8; /* Bleu clair pour les lignes paires */
+  }
+  
+  /* Lignes survolées */
+  .user-table tr:hover {
+    background-color: #2858db; /* Changer la couleur de fond lorsque survolé */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Cellules du tableau */
+  .user-table td {
+    font-weight: bold;
+    padding: 12px;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: 1px solid #ffffff; /* Légère bordure entre les cellules */
+  }
+  
+  /* Animation de survol sur les lignes du tableau */
+  .user-table tr:hover td {
+    animation: hoverEffect 0.3s ease-in-out; /* Animation lors du survol */
+  }
+  
+
+  /* Overlay modal (l'arrière-plan semi-transparent) */
+.modal-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;  /* Pour s'assurer que le modal est au-dessus du contenu */
+  }
+  
+  /* Contenu du modal */
+  .modal-content {
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 8px;
+    width: 400px; /* Largeur du modal */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Ombre douce pour l'effet flottant */
+    text-align: center;
+  }
+  
+  /* Style des champs de formulaire */
+  .modal-content label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+  }
+  
+  .modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .modal-actions button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modal-actions button:hover {
+    background-color: #45a049;
+  }
+  
+  .modal-actions button[type="button"] {
+    background-color: #f44336;  /* Rouge pour le bouton d'annulation */
+  }
+  
+  .modal-actions button[type="button"]:hover {
+    background-color: #e53935;
+  }
+  
+  .buttondelete {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    width: 110px;
+
+  }
+  .buttondelete:hover {
+    background-color: rgb(255, 5, 5); /* Couleur légèrement plus foncée au survol */
+  }
+  
+  .buttonedit {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    width: 100px;
+  }
+  .buttonedit:hover {
+    background-color: darkorange; /* Couleur légèrement plus foncée au survol */
+  }
+  
+  .buttondelete i, .buttonedit i {
+    font-size: 14px; /* Réduire la taille des icônes */
+    margin-right: 4px;
+  }
+  

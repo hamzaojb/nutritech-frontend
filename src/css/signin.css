@@ -1,0 +1,115 @@
+/* Style global pour centrer le contenu */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #110337;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+/* Conteneur principal pour le formulaire */
+form {
+    background-color: #D9D9D9;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Taille plus petite pour un design plus compact */
+    padding: 40px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Effet de mouvement pour l'animation */
+}
+
+/* Style pour chaque ligne de formulaire */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Aligner les éléments verticalement */
+    align-items: flex-start; /* Aligner le contenu au début */
+    width: 100%;
+}
+
+/* Style pour les labels */
+label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    align-self: flex-start; /* Positionner le label à gauche */
+    text-align: left;
+}
+
+/* Style pour les champs de saisie */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #80A7B2;
+    background-color: #80A7B2;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Effet de focus pour les champs de saisie */
+input:focus {
+    border-color: #000000;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Style pour le bouton de soumission */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #091ed6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #032cb3;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+/* Style pour les messages (erreur ou succès) */
+p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Style pour le titre */
+h2 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+/* Style pour le lien "Sign up" */
+.signup-link {
+    font-size: 14px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #0b07f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}

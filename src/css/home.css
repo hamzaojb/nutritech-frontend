@@ -185,4 +185,8 @@ body, .home-content {
     font-size: 14px; /* Réduire la taille des icônes */
     margin-right: 4px;
   }
+  .add-product-btn{
+    width: 140px;
+    height: 45px;
+  }
   

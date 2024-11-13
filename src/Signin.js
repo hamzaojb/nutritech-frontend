@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import './css/signin.css'; // Importation du fichier CSS
 import SignUpImage from './images/nutri.png'; // Chemin vers l'image
 
-
 function Signin() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -19,6 +18,8 @@ function Signin() {
             const response = await axios.post('http://127.0.0.1:8000/accounts/signin/', data);
             setMessage(response.data.message);
             if (response.data.message === 'Connexion réussie !') {
+                // Stockage de l'email dans localStorage
+                localStorage.setItem('email', email);
                 navigate('/home');
             }
         } catch (error) {
@@ -57,7 +58,6 @@ function Signin() {
                 <div className="signup-link">
                     <p>If you don't have an account, <a href="/signup">Sign up</a></p>
                 </div>
-
             </form>
         </div>
     );

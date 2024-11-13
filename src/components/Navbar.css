@@ -83,3 +83,26 @@
 .navbar-signup:hover {
   background-color: #3a9bfd;
 }
+
+/* Navbar buttons */
+.navbar-buttons {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Styling pour le cercle contenant les initiales */
+.navbar-user-circle {
+  width: 70px;
+  height: 40px;
+  background-color: #0abfec;  /* Couleur du cercle */
+  color: rgb(14, 13, 13);
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;  /* Pour créer un cercle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  margin-right: 10px;
+}

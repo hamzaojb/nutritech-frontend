@@ -1,0 +1,86 @@
+/* Style global pour la landing page */
+.landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Animation de texte */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Effet de texte principal */
+  .main-text {
+    font-size: 3rem;
+    font-weight: bold;
+    animation: fadeIn 2s ease-out;
+    margin-left: 200px;
+  }
+  
+  /* Effet de texte secondaire */
+  .sub-text {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    animation: fadeIn 2.5s ease-out;
+    color: #45a049;
+  }
+  
+  /* Animation du logo flottant */
+  @keyframes floatLogo {
+    0% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Logo flottant */
+  .logo-container {
+    margin-bottom: 30px;
+  }
+  
+  .logo {
+    margin-left: 290px;
+    width: 350px;
+    animation: floatLogo 3s ease-in-out infinite;
+  }
+  
+  /* Bouton d'appel à l'action */
+  .cta-button {
+    padding: 12px 30px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Effet de transition pour l'animation du fond */
+  .landing-page {
+    animation: fadeIn 3s ease-out;
+  }
+  
